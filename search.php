@@ -5,7 +5,7 @@
   <meta charset="utf-8">
 </head>
 <body>
-  <form action="" method="post">
+  <form action="" method="POST">
     <p>検索したいidを入力してください。</p>
     <input type="text" name="code">
     <input type="submit" value="検索">
@@ -26,6 +26,7 @@
 
     $stmt = $dbh->prepare($sql);
     $stmt->execute();
+    
     while (1) {
       $rec = $stmt->fetch(PDO::FETCH_ASSOC);
       if ($rec == false) {

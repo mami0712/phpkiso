@@ -42,5 +42,6 @@
   <p>ニックネーム： <?php echo $nickname; ?> </p>
   <p>メールアドレス：<?php echo $email; ?></p>
   <p>お問い合わせ内容：<?php echo $content; ?></p>
+  <a href="view.php">お問い合わせ一覧</a>
 </body>
 </html>
